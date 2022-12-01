@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container b {
+    font-weight: 900;
+}
+.container h1 {
+    font-weight:300;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 01px;
+}
+.container p {
+    color: white;
+    font-size: 20px;
+}
+.container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.menuBtn {
+    height: 50px;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.content {
+    display: grid;
+    grid-template-columns: 234px 234px 234px 234px;
+    grid-template-rows: 310px 310px;
+    justify-content: center;
+    grid-area: 1/4/1/2;
+}
+.content h1 {
+    margin: 0;
+    font-size: 16px;
+}
+.card:hover {
+    cursor: pointer;
+}
+.menuH1{
+    margin-left: 290px;
+    text-decoration: underline #F1D5BB;
+    letter-spacing: 2px;
+}
+.nav {
+    background: #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 132px;
+    height: 90%;
+    left: 57px;
+    top: 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navItem {
+    color: white;
+    font-size: 50px;
+}
+.navItem:hover {
+    color: #F1D5BB;
+}
+.navItemSpecial {
+    color: #F1D5BB;
+    font-size: 50px;
+}
+.loadMoreBtn {
+    color: white;
+    background-color: #000;
+    height: 50px;
+    width: 130px;
+    margin-top: 10px;
+}
+.loadMoreBtn:hover {
+    background: rgb(24, 24, 24);
+    cursor: pointer;
+}
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.subCard {
+    width:200px;
+    height: 240px;
+	background:#ffffff;
+	color:rgb(0, 0, 0);
+	font-size: 16px;
+	padding:20px;
+	text-align:center;
+	opacity:0;
+	transition: 1s;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.43);
+    border-radius: 10px;
+    position: relative;
+    top: -99%;
+    left: -10px;
+}
+.subCard li {
+    width: max-content;
+}
+.card:hover .subCard {
+	opacity:1;
+	transition: 1s;
+}
